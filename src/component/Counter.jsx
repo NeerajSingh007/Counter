@@ -1,5 +1,5 @@
 import { useState} from "react";
-import './Counter.css';
+
  function Counter(){
     
 
@@ -10,14 +10,15 @@ import './Counter.css';
      }
      return (
         
-             <div >Counter: <h1 className={ counter%2 === 0 ? "even" : "odd" }>{counter}</h1>
+        <div >Counter: <h1>{counter}</h1>
           <div>
-                 <button onClick={() => {cal(1)}}>Increament</button>
-                 <button onClick={() => {cal(-1)}}>Decreament</button>
-                 <button onClick={() => {cal(counter*1)}}>Double</button>
+                 <button onClick={() => {cal(5)}}>ADD</button>
+                 <button onClick={() => {cal(-5)}}>REDUCE</button>
+               
                
              </div>
-         </div>
+             </div>
+      
      )
  }
  export {Counter};
